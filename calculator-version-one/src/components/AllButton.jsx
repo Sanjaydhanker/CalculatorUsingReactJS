@@ -8,7 +8,8 @@ function AllButton({ buttonNames }) {
           <button
             key={btn}
             type="button"
-            className="size-14 text-xl text-indigo-600 rounded font-medium bg-gray-300"
+            onClick={() => console.log(`${btn} clicked`)}
+            className="size-14 text-xl text-indigo-600 rounded font-medium bg-gray-300 hover:bg-gray-400 cursor-pointer"
           >
             {btn}
           </button>
