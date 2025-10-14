@@ -1,4 +1,5 @@
 import AllButton from "./components/AllButton";
+import CalculatorContainer from "./components/CalculatorContainer";
 import InputTag from "./components/InputTag";
 
 function App() {
@@ -27,12 +28,10 @@ function App() {
   return (
     <>
       <div className="w-full h-screen bg-gray-800 flex items-center justify-center">
-        <div className="w-[400px] h-auto p-10 rounded-xl shadow bg-indigo-300">
-          {/* input */}
-          <InputTag />
-          {/* Buttons */}
+        <CalculatorContainer>
+          <InputTag type="text" />
           <AllButton buttonNames={buttonNames} />
-        </div>
+        </CalculatorContainer>
       </div>
     </>
   );
